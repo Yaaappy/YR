@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         int d = 0;
-        float A = 0, B = 0;
+        float A = 0;
         string T = "";
         bool z = false;
         public Form1()
