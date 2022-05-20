@@ -14,7 +14,6 @@ namespace WindowsFormsApp1
     {
         int d = 0;
         float A = 0;
-        string T = "";
         bool z = false;
         public Form1()
         {
