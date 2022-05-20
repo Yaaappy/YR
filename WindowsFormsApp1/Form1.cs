@@ -13,8 +13,7 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         int d = 0;
-        float A = 0, B = 0;
-        string T = "";
+        float A = 0;
         bool z = false;
         public Form1()
         {
@@ -117,11 +116,6 @@ namespace WindowsFormsApp1
             d = 0;
             z = false;
         } // =
-        private void kp_del(object sender, KeyEventArgs e)
-        {
-            if (z == false) textBox1.Text = textBox1.Text + ",";
-            z = true;
-        }
 
         private void button17_Click(object sender, EventArgs e)
         {
