@@ -116,11 +116,6 @@ namespace WindowsFormsApp1
             d = 0;
             z = false;
         } // =
-        private void kp_del(object sender, KeyEventArgs e)
-        {
-            if (z == false) textBox1.Text = textBox1.Text + ",";
-            z = true;
-        }
 
         private void button17_Click(object sender, EventArgs e)
         {
