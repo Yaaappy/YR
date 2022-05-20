@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        int d = 0;
+        int d = 0, d1 = 0;
         float A = 0;
         bool z = false;
         public Form1()
@@ -48,75 +48,29 @@ namespace WindowsFormsApp1
 
         private void button14_Click(object sender, EventArgs e)
         {
-            string tb1 = textBox1.Text;
-            if (tb1 == "") tb1 = "0";
-            if (d == 0) A = Convert.ToSingle(tb1);
-            if (d == 1) A = A + Convert.ToSingle(tb1);
-            if (d == 2) A = A - Convert.ToSingle(tb1);
-            if (d == 3) A = A * Convert.ToSingle(tb1);
-            if (d == 4) A = A / Convert.ToSingle(tb1);
-            textBox1.Text = "";
-            textBox2.Text = A.ToString(); 
-            d = 1;
-            z = false;
+            d1 = 1;
+            Math();
         } // +
         private void button13_Click(object sender, EventArgs e)
         {
-            string tb1 = textBox1.Text;
-            if (tb1 == "") tb1 = "0";
-            if (d == 0) A = Convert.ToSingle(tb1);
-            if (d == 1) A = A + Convert.ToSingle(tb1);
-            if (d == 2) A = A - Convert.ToSingle(tb1);
-            if (d == 3) A = A * Convert.ToSingle(tb1);
-            if (d == 4) A = A / Convert.ToSingle(tb1);
-            textBox1.Text = "";
-            textBox2.Text = A.ToString(); 
-            d = 2;
-            z = false;
+            d1 = 2;
+            Math();
         } // -
         private void button12_Click(object sender, EventArgs e)
         {
-            string tb1 = textBox1.Text;
-            if (tb1 == "") tb1 = "0";
-            if (d == 0) A = Convert.ToSingle(tb1);
-            if (d == 1) A = A + Convert.ToSingle(tb1);
-            if (d == 2) A = A - Convert.ToSingle(tb1);
-            if (d == 3) A = A * Convert.ToSingle(tb1);
-            if (d == 4) A = A / Convert.ToSingle(tb1);
-            textBox1.Text = "";
-            textBox2.Text = A.ToString(); 
-            d = 3;
-            z = false;
+            d1 = 3;
+            Math();
         } // *
         private void button11_Click(object sender, EventArgs e)
         {
-            string tb1 = textBox1.Text;
-            if (tb1 == "") tb1 = "0";
-            if (d == 0) A = Convert.ToSingle(tb1);
-            if (d == 1) A = A + Convert.ToSingle(tb1);
-            if (d == 2) A = A - Convert.ToSingle(tb1);
-            if (d == 3) A = A * Convert.ToSingle(tb1);
-            if (d == 4) A = A / Convert.ToSingle(tb1);
-            textBox1.Text = "";
-            textBox2.Text = A.ToString(); 
-            d = 4;
-            z = false;
+            d1 = 4;
+            Math();
         } // /
         private void button15_Click(object sender, EventArgs e)
         {
-            string tb1 = textBox1.Text;
-            if (tb1 == "") tb1 = "0";
-            if (d == 0) A = Convert.ToSingle(tb1);
-            if (d == 1) A = A + Convert.ToSingle(tb1);
-            if (d == 2) A = A - Convert.ToSingle(tb1);
-            if (d == 3) A = A * Convert.ToSingle(tb1);
-            if (d == 4) A = A / Convert.ToSingle(tb1);
-            textBox1.Text = "";
-            textBox2.Text = A.ToString(); 
-            d = 0;
-            z = false;
+            d1 = 0;
+            Math();
         } // =
-
         private void button17_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
@@ -142,74 +96,43 @@ namespace WindowsFormsApp1
             }
             if (e.KeyChar == 43)
             {
-                string tb1 = textBox1.Text;
-                if (tb1 == "") tb1 = "0";
-                if (d == 0) A = Convert.ToSingle(tb1);
-                if (d == 1) A = A + Convert.ToSingle(tb1);
-                if (d == 2) A = A - Convert.ToSingle(tb1);
-                if (d == 3) A = A * Convert.ToSingle(tb1);
-                if (d == 4) A = A / Convert.ToSingle(tb1);
-                textBox1.Text = "";
-                textBox2.Text = A.ToString();
-                d = 1;
-                z = false;
+                d1 = 1;
+                Math();
             }
             if (e.KeyChar == 45)
             {
-                string tb1 = textBox1.Text;
-                if (tb1 == "") tb1 = "0";
-                if (d == 0) A = Convert.ToSingle(tb1);
-                if (d == 1) A = A + Convert.ToSingle(tb1);
-                if (d == 2) A = A - Convert.ToSingle(tb1);
-                if (d == 3) A = A * Convert.ToSingle(tb1);
-                if (d == 4) A = A / Convert.ToSingle(tb1);
-                textBox1.Text = "";
-                textBox2.Text = A.ToString();
-                d = 2;
-                z = false;
+                d1 = 2;
+                Math();
             }
             if (e.KeyChar == 42)
             {
-                string tb1 = textBox1.Text;
-                if (tb1 == "") tb1 = "0";
-                if (d == 0) A = Convert.ToSingle(tb1);
-                if (d == 1) A = A + Convert.ToSingle(tb1);
-                if (d == 2) A = A - Convert.ToSingle(tb1);
-                if (d == 3) A = A * Convert.ToSingle(tb1);
-                if (d == 4) A = A / Convert.ToSingle(tb1);
-                textBox1.Text = "";
-                textBox2.Text = A.ToString();
-                d = 3;
-                z = false;
+                d1 = 3;
+                Math();
             }
             if (e.KeyChar == 47)
             {
-                string tb1 = textBox1.Text;
-                if (tb1 == "") tb1 = "0";
-                if (d == 0) A = Convert.ToSingle(tb1);
-                if (d == 1) A = A + Convert.ToSingle(tb1);
-                if (d == 2) A = A - Convert.ToSingle(tb1);
-                if (d == 3) A = A * Convert.ToSingle(tb1);
-                if (d == 4) A = A / Convert.ToSingle(tb1);
-                textBox1.Text = "";
-                textBox2.Text = A.ToString();
-                d = 4;
-                z = false;
+                d1 = 4;
+                Math();
             }
             if (e.KeyChar == 61)
             {
-                string tb1 = textBox1.Text;
-                if (tb1 == "") tb1 = "0";
-                if (d == 0) A = Convert.ToSingle(tb1);
-                if (d == 1) A = A + Convert.ToSingle(tb1);
-                if (d == 2) A = A - Convert.ToSingle(tb1);
-                if (d == 3) A = A * Convert.ToSingle(tb1);
-                if (d == 4) A = A / Convert.ToSingle(tb1);
-                textBox1.Text = "";
-                textBox2.Text = A.ToString();
-                d = 0;
-                z = false;
+                d1 = 0;
+                Math();
             }
+        }
+        void Math()
+        {
+            string tb1 = textBox1.Text;
+            if (tb1 == "") tb1 = "0";
+            if (d == 0) A = Convert.ToSingle(tb1);
+            if (d == 1) A = A + Convert.ToSingle(tb1);
+            if (d == 2) A = A - Convert.ToSingle(tb1);
+            if (d == 3) A = A * Convert.ToSingle(tb1);
+            if (d == 4) A = A / Convert.ToSingle(tb1);
+            textBox1.Text = "";
+            textBox2.Text = A.ToString();
+            d = d1;
+            z = false;
         }
     }
 }
