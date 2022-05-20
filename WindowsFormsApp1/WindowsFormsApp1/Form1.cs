@@ -16,12 +16,9 @@ namespace WindowsFormsApp1
         float A = 0, B = 0;
         string T = "";
         bool z = false;
-        //bool d = false;
         public Form1()
         {
             InitializeComponent();
-            
-            //string str;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -132,18 +129,6 @@ namespace WindowsFormsApp1
             textBox2.Text = "";
             d = 0;
         }
-
-        /*private void button_D(object sender, EventArgs e)
-{
-string tb1 = textBox1.Text;
-if (d == 0) A = Convert.ToInt32(tb1);
-if (d == 1) A = A + Convert.ToInt32(tb1);
-if (d == 2) A = A - Convert.ToInt32(tb1);
-if (d == 3) A = A * Convert.ToInt32(tb1);
-if (d == 4) A = A / Convert.ToInt32(tb1);
-textBox1.Text = "";
-textBox2.Text = A.ToString();
-}*/
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
